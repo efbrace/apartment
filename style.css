@@ -32,6 +32,7 @@ nav button{
     text-transform: uppercase;
     padding: 0.6rem 0.7rem;
     border-radius: 0.3rem;
+    cursor: pointer;
 }
 
 #hero{
@@ -64,6 +65,7 @@ nav button{
     border: none;
      background-color: bisque;
      border-radius: 0.3rem;
+     cursor: pointer;
 }
 #hero .overlay button i {
    padding: 0.2rem;
@@ -105,6 +107,7 @@ nav button{
 #search-titile span{
     background-color: bisque;
     padding: 1.1rem 1.5rem;
+    cursor: pointer;
 }
 #search-titile span:nth-child(2){
     background-color: white;
@@ -191,12 +194,12 @@ nav button{
 
 }
 #categeories .categeory-card{
-    background-color: bisque;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     padding: 3rem;
+    transition: 0.2s ease-in-out;
 }
 #categeories .categeory-card i{
     font-size: 4.2rem;
@@ -204,6 +207,6 @@ nav button{
 }
 
 #categeories .categeory-card:hover{
-    background-color: rgb(253, 208, 153);
-   color: white;
+    background-color:bisque;
+   color: rgb(77, 37, 5);
 }
