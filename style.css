@@ -8,7 +8,7 @@ body{
     color: rgb(1, 1, 48);
 }
 /************************************************************************ NAV */
- nav{
+ /* nav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -28,6 +28,48 @@ nav ul{
     flex-direction: row;
     text-transform: uppercase;
     column-gap: 4rem;
+}
+
+
+nav button{
+    border: none;
+    background-color: bisque;
+    font-size: inherit;
+    text-transform: uppercase;
+    padding: 0.6rem 0.7rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+} */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0rem 5rem;
+    font-size: 0.9rem;
+}
+nav span{
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    height: 100%;
+}
+ nav ul li{
+    height: 4rem;
+    padding: 1.5rem 2rem;
+    transition: .3s ease-in-out;
+}  
+nav ul li:hover{
+    align-self: flex-start;
+    padding:1rem 0rem ;
+    background-color: bisque;
 }
 
 
@@ -303,10 +345,11 @@ margin-bottom: 0.7rem;
     cursor: pointer;
    padding: 0.2rem;
    font-size: 6rem;
+   transition: .3s ease-in-out;
 }
 #video .overlay .play-button i:hover {
     border-radius: 100%;
-   box-shadow: 0px 0px 10px black;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.945);
     color: bisque;
    font-size: 7rem;
 }
