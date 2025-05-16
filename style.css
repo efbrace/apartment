@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 body{
-    font-family: sans-serif;
+    font-family: "Outfit", sans-serif;
 }
-
+/************************************************************************ NAV */
  nav{
     display: flex;
     flex-direction: row;
@@ -34,6 +34,7 @@ nav button{
     border-radius: 0.3rem;
     cursor: pointer;
 }
+/**************************************************************************** HERO */
 
 #hero{
     background-image:url(./assets/home2.jpg);
@@ -84,7 +85,7 @@ nav button{
   line-height: 1.9;
 }
 
-/* SEARCH */
+/**************************************************************************** SEARCH */
 
 .search{
     display: flex;
@@ -153,7 +154,7 @@ nav button{
    font-weight:600;
 }
 
-/* CATEGEORIES */
+/******************************************************************** CATEGEORIES */
 
 #categeories{
     margin: auto;
@@ -209,4 +210,43 @@ nav button{
 #categeories .categeory-card:hover{
     background-color:bisque;
    color: rgb(77, 37, 5);
+}
+
+/**************************************************************************** LOCATIONS */
+#locations{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 60vw;
+    height: 100vh;
+    margin:auto;
+}
+.location-container{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+.location{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem, 0rem;
+    border-bottom: 1px solid gray;
+}
+.location h4{
+    margin-bottom: 0.7rem;
+}
+.location p{
+color: brown;
+background-color: lightgray;
+padding: 0.1rem 0.5rem;
+border-radius: 0.2rem;
+}
+
+.location:hover p {
+    cursor: pointer;
+    color: white;
+    background-color: brown;
 }
